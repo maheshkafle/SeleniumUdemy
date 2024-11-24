@@ -29,8 +29,13 @@ public class Locators
 		
 		//Generic xpath -> //tagname[@attribute='value']
 		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("mahesh");
+		driver.findElement(By.xpath("//input[@type='text'][1]")).clear();
+		driver.findElement(By.cssSelector("input[type='text']:nth-child(2)")).sendKeys("ramesh");
 		driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("maheshintech@gmail.com");
+		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();
+		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("kaflemahesh0@gmail.com");
 		driver.findElement(By.xpath("//input[@placeholder='Phone Number']")).sendKeys("0561803017");
+		
 		
 	}
 }
