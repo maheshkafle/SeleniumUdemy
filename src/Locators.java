@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Locators 
 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws InterruptedException 
 	{
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\kaflemah\\Personal\\Drivers\\chromedriver\\chromedriver.exe");
@@ -35,7 +35,15 @@ public class Locators
 		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();
 		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("kaflemahesh0@gmail.com");
 		driver.findElement(By.xpath("//input[@placeholder='Phone Number']")).sendKeys("0561803017");
-		
-		
+		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
+		System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector(".go-to-login-btn")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.cssSelector("#inputUsername")).sendKeys("mahesh");
+		driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
+		driver.findElement(By.xpath("//button[contains(@class,'signInBtn')]")).click();
+		driver.findElement(By.xpath("//input[@id='chkboxTwo']")).click();
+		driver.findElement(By.cssSelector(".signInBtn")).click();
 	}
 }
