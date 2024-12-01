@@ -3,6 +3,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class Locators 
 {
@@ -18,6 +19,7 @@ public class Locators
 			if element is not seen after maximum wait time then we run into NoSuchElementException
 		 */
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		String name = "Mahesh";
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		driver.findElement(By.id("inputUsername")).sendKeys("rahul");
 		driver.findElement(By.name("inputPassword")).sendKeys("abc123");
@@ -40,7 +42,7 @@ public class Locators
 		Thread.sleep(2000);
 		driver.findElement(By.cssSelector(".go-to-login-btn")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.cssSelector("#inputUsername")).sendKeys("mahesh");
+		driver.findElement(By.cssSelector("#inputUsername")).sendKeys(name);
 		driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
 		driver.findElement(By.xpath("//button[contains(@class,'signInBtn')]")).click();
 		driver.findElement(By.xpath("//input[@id='chkboxTwo']")).click();
