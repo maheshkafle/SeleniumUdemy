@@ -13,6 +13,9 @@ public class ParentToChildAndSiblingTraverse
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		//Here we have Parent to child traverse at first and then sibling to sibling traverse after that
 		System.out.println(driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).getText());
+		
+		//Here we have traversed from child to parent and then to grand parent and finally to child
+		System.out.println(driver.findElement(By.xpath("//header/div/button[1]/parent::div/parent::header/a[2]")).getText());
 	}
 
 }
