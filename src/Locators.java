@@ -47,5 +47,11 @@ public class Locators
 		driver.findElement(By.xpath("//button[contains(@class,'signInBtn')]")).click();
 		driver.findElement(By.xpath("//input[@id='chkboxTwo']")).click();
 		driver.findElement(By.cssSelector(".signInBtn")).click();
+		Thread.sleep(2000);
+		System.out.println(driver.findElement(By.tagName("p")).getText());
+		Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in.");	
+		System.out.println(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText());
+		Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(), "Hello "+name+",");
+		driver.findElement(By.cssSelector(".logout-btn")).click();
 	}
 }
