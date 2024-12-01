@@ -10,12 +10,15 @@
 	    <artifactId>selenium-java</artifactId>
 	    <version>4.26.0</version>
 	</dependency>
+<<<<<<< HEAD
 	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 	<dependency>
 	    <groupId>org.testng</groupId>
 	    <artifactId>testng</artifactId>
 	    <version>7.10.2</version>
 	</dependency>
+=======
+>>>>>>> refs/heads/master
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
