@@ -6,6 +6,6 @@
 
 */target/classes
 
-/target/classes/META-INF/maven/UdemySelenium/UdemySelenium/*.properties
+/target/classes/*
 
 /target/classes/.gitignore
