@@ -1,0 +1,13 @@
+/target/classes/META-INF/maven/UdemySelenium/UdemySelenium/pom.properties
+
+.gitignore
+
+*/target
+
+*/*.class
+
+*/target/classes
+
+/target/classes/*
+
+/target/classes/.gitignore
