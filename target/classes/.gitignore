@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+/META-INF/
+=======
 /FromAndToDropdownjava.class
 /AutoSuggestiveDropdown.class
 /DropdownAndCheckbox.class
@@ -5,3 +8,5 @@
 /LocatorEnabledOrDisabled.class
 /HandleAlerts.class
 /AmazonInterviewQuestion.class
+>>>>>>> refs/heads/feature/AutomateWebUIElements
+/UpdatedDropdown.class
