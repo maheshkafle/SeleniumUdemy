@@ -1,12 +1,1 @@
-<<<<<<< HEAD
-/META-INF/
-=======
-/FromAndToDropdownjava.class
-/AutoSuggestiveDropdown.class
-/DropdownAndCheckbox.class
-/META-INF/
-/LocatorEnabledOrDisabled.class
-/HandleAlerts.class
-/AmazonInterviewQuestion.class
->>>>>>> refs/heads/feature/AutomateWebUIElements
-/UpdatedDropdown.class
+/AmzonNavbarHoverUsingActions.class
